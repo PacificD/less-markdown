@@ -1,7 +1,7 @@
 /*
  * @Author: Pacific_D
  * @Date: 2022-08-01 17:10:48
- * @LastEditTime: 2022-08-02 20:56:52
+ * @LastEditTime: 2022-08-03 09:45:15
  * @LastEditors: Pacific_D
  * @Description:
  * @FilePath: \less-markdown\packages\renderer\src\pages\Editor\index.tsx
@@ -9,6 +9,7 @@
 
 import React, { useEffect, useRef } from "react"
 import MDEditor, { commands, ICommand, TextState, TextAreaTextApi } from "@uiw/react-md-editor"
+
 import "./index.css"
 
 const toolbar: Array<ICommand> = [
@@ -82,7 +83,7 @@ const toolbar: Array<ICommand> = [
   })
 ]
 
-const Editor = () => {
+const MEditor = () => {
   const [value, setValue] = React.useState("**Hello world!!!**")
 
   return (
@@ -105,4 +106,4 @@ const Editor = () => {
   )
 }
 
-export default Editor
+export default MEditor
